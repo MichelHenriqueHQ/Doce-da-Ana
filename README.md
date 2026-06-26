@@ -59,7 +59,7 @@ Foram implementadas três funcionalidades:
 
 ## Links
 - Link do repositório: _(preencher após publicar no GitHub)_
-- Link do site publicado: _(preencher após ativar o GitHub Pages)_
+- Link do site publicado: https://michelhenriquehq.github.io/Doce-da-Ana/
 
 ## Contribuição dos integrantes
 - David Monteiro: estrutura HTML, semântica e acessibilidade.
