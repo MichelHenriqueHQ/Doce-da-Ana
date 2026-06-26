@@ -58,7 +58,7 @@ Foram implementadas três funcionalidades:
 - Página publicada verificada fora do ambiente local.
 
 ## Links
-- Link do repositório: _(preencher após publicar no GitHub)_
+- Link do repositório: https://github.com/MichelHenriqueHQ/Doce-da-Ana)
 - Link do site publicado: https://michelhenriquehq.github.io/Doce-da-Ana/
 
 ## Contribuição dos integrantes
