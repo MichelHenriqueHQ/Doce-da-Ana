@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doce da Ana – Confeitaria Artesanal</title>
+  <meta name="description" content="Bolos, doces e sobremesas artesanais feitos com amor em Goiás. Encomende o seu!" />
+
+  <!-- Bootstrap 5 -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- CSS próprio -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header>
+    <nav class="navbar navbar-expand-lg" aria-label="Menu principal">
+      <div class="container">
+        <a class="navbar-brand" href="#inicio">
+          🎂 Doce da Ana
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menuPrincipal"
+          aria-controls="menuPrincipal"
+          aria-expanded="false"
+          aria-label="Abrir menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto gap-2">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cardapio">Cardápio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#faq">Dúvidas</a></li>
+            <li class="nav-item"><a class="nav-link btn-contato" href="#contato">Fazer encomenda</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <main>
+    <section class="hero" id="inicio" aria-label="Apresentação">
+      <div class="container text-center">
+        <p class="hero-eyebrow">Confeitaria artesanal em Goiás</p>
+        <h1 class="hero-title">Cada mordida,<br>uma memória doce</h1>
+        <p class="hero-sub">
+          Bolos, brigadeiros e sobremesas feitos à mão com ingredientes selecionados.
+          Encomende com antecedência e receba um doce feito só pra você.
+        </p>
+        <a href="#cardapio" class="btn-primario">Ver cardápio</a>
+        <a href="#contato" class="btn-secundario">Fazer encomenda</a>
+      </div>
+    </section>
+
+    <!-- ========== SOBRE ========== -->
+    <section class="secao-sobre" id="sobre" aria-labelledby="titulo-sobre">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="sobre-imagem" aria-hidden="true">
+              <div class="sobre-placeholder">
+                🎂
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <p class="secao-eyebrow">Quem sou eu</p>
+            <h2 id="titulo-sobre">Oi, eu sou a Ana!</h2>
+            <p>
+              Sou confeiteira artesanal há mais de 8 anos, apaixonada por transformar
+              ingredientes simples em momentos inesquecíveis. Cada bolo que saio daqui
+              é feito com atenção e carinho do início ao fim.
+            </p>
+            <p>
+              Trabalho sob encomenda, então cada pedido é único: adapto sabores,
+              tamanhos e decorações para a sua ocasião especial.
+            </p>
+            <ul class="lista-diferenciais" aria-label="Diferenciais">
+              <li>✅ Ingredientes frescos e selecionados</li>
+              <li>✅ Sem conservantes artificiais</li>
+              <li>✅ Opções sem glúten e sem lactose</li>
+              <li>✅ Entrega em Águas Lindas e região</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CARDÁPIO ========== -->
+    <section class="secao-cardapio" id="cardapio" aria-labelledby="titulo-cardapio">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="secao-eyebrow">O que a gente faz</p>
+          <h2 id="titulo-cardapio">Cardápio</h2>
+          <p class="secao-descricao">Tudo feito sob encomenda. Clique num item para ver os sabores disponíveis.</p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Card 1 -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card-produto" aria-labelledby="produto-bolo">
+              <div class="card-produto-icone" aria-hidden="true">🎂</div>
+              <h3 id="produto-bolo">Bolos decorados</h3>
+              <p>Para aniversários, casamentos e qualquer comemoração. Personalize o sabor e a decoração.</p>
+              <p class="card-preco">A partir de <strong>R$ 120</strong></p>
+              <button
+                class="btn-ver-sabores"
+                aria-expanded="false"
+                aria-controls="sabores-bolo"
+                data-alvo="sabores-bolo"
+              >Ver sabores ▾</button>
+              <div id="sabores-bolo" class="lista-sabores" hidden>
+                <ul>
+                  <li>Chocolate com morango</li>
+                  <li>Baunilha com frutas vermelhas</li>
+                  <li>Red velvet com cream cheese</li>
+                  <li>Cenoura com cobertura de chocolate</li>
+                  <li>Limão siciliano</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card-produto" aria-labelledby="produto-brigadeiro">
+              <div class="card-produto-icone" aria-hidden="true">🍫</div>
+              <h3 id="produto-brigadeiro">Brigadeiros gourmet</h3>
+              <p>Caixinhas perfeitas para presentes, festas ou aquele mimo do dia a dia.</p>
+              <p class="card-preco">Caixa com 9: <strong>R$ 35</strong></p>
+              <button
+                class="btn-ver-sabores"
+                aria-expanded="false"
+                aria-controls="sabores-brigadeiro"
+                data-alvo="sabores-brigadeiro"
+              >Ver sabores ▾</button>
+              <div id="sabores-brigadeiro" class="lista-sabores" hidden>
+                <ul>
+                  <li>Chocolate belga</li>
+                  <li>Pistache</li>
+                  <li>Maracujá</li>
+                  <li>Churros</li>
+                  <li>Ninho com Nutella</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-6 col-lg-4">
+            <article class="card-produto" aria-labelledby="produto-sobremesa">
+              <div class="card-produto-icone" aria-hidden="true">🍰</div>
+              <h3 id="produto-sobremesa">Sobremesas individuais</h3>
+              <p>Cheesecakes, mousses e tortas em porções individuais. Ideais para eventos e buffets.</p>
+              <p class="card-preco">A partir de <strong>R$ 15</strong> / unidade</p>
+              <button
+                class="btn-ver-sabores"
+                aria-expanded="false"
+                aria-controls="sabores-sobremesa"
+                data-alvo="sabores-sobremesa"
+              >Ver sabores ▾</button>
+              <div id="sabores-sobremesa" class="lista-sabores" hidden>
+                <ul>
+                  <li>Cheesecake de frutas vermelhas</li>
+                  <li>Mousse de maracujá</li>
+                  <li>Torta de limão</li>
+                  <li>Petit gâteau de chocolate</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="secao-faq" id="faq" aria-labelledby="titulo-faq">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="secao-eyebrow">Dúvidas frequentes</p>
+          <h2 id="titulo-faq">Perguntas e respostas</h2>
+        </div>
+
+        <div class="faq-lista" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-pergunta"
+              aria-expanded="false"
+              aria-controls="faq-resp-1"
+            >Com quanto tempo de antecedência devo encomendar?</button>
+            <div id="faq-resp-1" class="faq-resposta" hidden>
+              <p>Para bolos decorados, peço pelo menos <strong>5 dias úteis</strong> de antecedência. Brigadeiros e sobremesas individuais podem ser pedidos com <strong>3 dias</strong> de antecipação.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-pergunta"
+              aria-expanded="false"
+              aria-controls="faq-resp-2"
+            >Vocês fazem entregas?</button>
+            <div id="faq-resp-2" class="faq-resposta" hidden>
+              <p>Sim! Faço entregas em Águas Lindas de Goiás e cidades próximas. O valor do frete é combinado de acordo com o endereço. Também é possível retirar sem custo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-pergunta"
+              aria-expanded="false"
+              aria-controls="faq-resp-3"
+            >Tem opção para intolerantes ao glúten ou lactose?</button>
+            <div id="faq-resp-3" class="faq-resposta" hidden>
+              <p>Sim! Tenho opções <strong>sem glúten</strong> e <strong>sem lactose</strong>. Basta informar no momento da encomenda para que eu possa adaptar a receita com segurança.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button
+              class="faq-pergunta"
+              aria-expanded="false"
+              aria-controls="faq-resp-4"
+            >Quais são as formas de pagamento?</button>
+            <div id="faq-resp-4" class="faq-resposta" hidden>
+              <p>Aceito <strong>Pix</strong>, transferência bancária e dinheiro. Para confirmar o pedido, solicito 50% de sinal no momento da encomenda.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTATO ========== -->
+    <section class="secao-contato" id="contato" aria-labelledby="titulo-contato">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7 text-center">
+            <p class="secao-eyebrow">Vamos conversar</p>
+            <h2 id="titulo-contato">Fazer uma encomenda</h2>
+            <p class="secao-descricao">Preencha o formulário abaixo e entrarei em contato para confirmar os detalhes do seu pedido.</p>
+          </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+          <div class="col-lg-6">
+            <form class="formulario-contato" id="formEncomenda" novalidate aria-label="Formulário de encomenda">
+
+              <div class="campo-grupo">
+                <label for="nome" class="campo-label">Seu nome <span aria-label="obrigatório">*</span></label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  class="campo-input"
+                  placeholder="Ex: Maria Silva"
+                  required
+                  aria-required="true"
+                />
+                <span class="campo-erro" id="erro-nome" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="campo-grupo">
+                <label for="whatsapp" class="campo-label">WhatsApp <span aria-label="obrigatório">*</span></label>
+                <input
+                  type="tel"
+                  id="whatsapp"
+                  name="whatsapp"
+                  class="campo-input"
+                  placeholder="(61) 99999-9999"
+                  required
+                  aria-required="true"
+                />
+                <span class="campo-erro" id="erro-whatsapp" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="campo-grupo">
+                <label for="produto" class="campo-label">O que você quer encomendar? <span aria-label="obrigatório">*</span></label>
+                <select id="produto" name="produto" class="campo-input" required aria-required="true">
+                  <option value="">Selecione uma opção</option>
+                  <option value="bolo">Bolo decorado</option>
+                  <option value="brigadeiro">Brigadeiros gourmet</option>
+                  <option value="sobremesa">Sobremesas individuais</option>
+                  <option value="outro">Outro</option>
+                </select>
+                <span class="campo-erro" id="erro-produto" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="campo-grupo">
+                <label for="mensagem" class="campo-label">Detalhes do pedido</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  class="campo-input"
+                  rows="4"
+                  placeholder="Conte a ocasião, quantidade, sabor preferido, data necessária..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-primario btn-bloco">Enviar encomenda</button>
+
+              <!-- Mensagem de confirmação (JS) -->
+              <div id="mensagem-sucesso" class="mensagem-sucesso" hidden role="status" aria-live="polite">
+                ✅ Mensagem enviada! Entrarei em contato em breve pelo WhatsApp.
+              </div>
+
+            </form>
+
+            <div class="contatos-diretos">
+              <p>Ou fale diretamente:</p>
+              <a href="https://wa.me/5561999999999" class="link-contato" aria-label="Contato via WhatsApp">📱 WhatsApp: (61) 99999-9999</a>
+              <a href="https://instagram.com/docedaana" class="link-contato" aria-label="Instagram da Doce da Ana">📸 Instagram: @docedaana</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="rodape-marca">🎂 Doce da Ana</p>
+          <p class="rodape-texto">Confeitaria artesanal em Águas Lindas de Goiás – GO</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <p class="rodape-texto">© 2025 Doce da Ana. Feito com 🤍.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmErqc6Dq2bC7UNUwhSf4p8oyhR"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- JS próprio -->
+  <script src="js/script.js"></script>
+</body>
+</html>

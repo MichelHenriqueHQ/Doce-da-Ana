@@ -1,0 +1,587 @@
+/* =============================================
+   Doce da Ana – style.css
+   Paleta: rosa suave + marrom quente + creme
+   ============================================= */
+
+/* ── Variáveis ── */
+:root {
+  --rosa:        #D4537E;
+  --rosa-claro:  #FBEAF0;
+  --rosa-borda:  #ED93B1;
+  --marrom:      #7B4A2D;
+  --creme:       #FDF6EE;
+  --creme-escuro:#F5EAD8;
+  --texto:       #2C2018;
+  --texto-medio: #5A3E2B;
+  --texto-leve:  #8C6A50;
+  --branco:      #FFFFFF;
+  --borda:       rgba(123, 74, 45, 0.15);
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+}
+
+/* ── Reset e base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--texto);
+  background-color: var(--branco);
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Navbar ── */
+.navbar {
+  background-color: var(--branco);
+  border-bottom: 1px solid var(--borda);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--marrom) !important;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: var(--rosa) !important;
+}
+
+.nav-link {
+  color: var(--texto-medio) !important;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.75rem !important;
+  border-radius: var(--radius-sm);
+  transition: color 0.2s, background 0.2s;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--rosa) !important;
+  background-color: var(--rosa-claro);
+}
+
+.btn-contato {
+  background-color: var(--rosa) !important;
+  color: var(--branco) !important;
+  border-radius: var(--radius-sm) !important;
+  font-weight: 600;
+}
+
+.btn-contato:hover,
+.btn-contato:focus {
+  background-color: var(--marrom) !important;
+  color: var(--branco) !important;
+}
+
+.navbar-toggler {
+  border-color: var(--borda);
+}
+
+/* ── Botões globais ── */
+.btn-primario {
+  display: inline-block;
+  background-color: var(--rosa);
+  color: var(--branco);
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primario:hover,
+.btn-primario:focus {
+  background-color: var(--marrom);
+  color: var(--branco);
+  transform: translateY(-1px);
+  outline: 2px solid var(--marrom);
+  outline-offset: 2px;
+}
+
+.btn-secundario {
+  display: inline-block;
+  background-color: transparent;
+  color: var(--marrom);
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--marrom);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.1s;
+  margin-left: 1rem;
+}
+
+.btn-secundario:hover,
+.btn-secundario:focus {
+  background-color: var(--marrom);
+  color: var(--branco);
+  transform: translateY(-1px);
+  outline: 2px solid var(--marrom);
+  outline-offset: 2px;
+}
+
+.btn-bloco {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+/* ── Eyebrows e títulos de seção ── */
+.secao-eyebrow,
+.hero-eyebrow {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--rosa);
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 4vw, 2.2rem);
+  font-weight: 700;
+  color: var(--marrom);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--marrom);
+  margin-bottom: 0.5rem;
+}
+
+.secao-descricao {
+  color: var(--texto-medio);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* ── Hero ── */
+.hero {
+  background-color: var(--creme);
+  padding: 6rem 0 5rem;
+  border-bottom: 1px solid var(--borda);
+}
+
+.hero-title {
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  font-weight: 800;
+  color: var(--marrom);
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.hero-sub {
+  font-size: 1.1rem;
+  color: var(--texto-medio);
+  max-width: 540px;
+  margin: 0 auto 2.5rem;
+}
+
+/* ── Sobre ── */
+.secao-sobre {
+  padding: 5rem 0;
+  background-color: var(--branco);
+}
+
+.sobre-imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-placeholder {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1;
+  background-color: var(--creme-escuro);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  border: 1px solid var(--borda);
+}
+
+.secao-sobre p {
+  color: var(--texto-medio);
+  margin-bottom: 1rem;
+}
+
+.lista-diferenciais {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.lista-diferenciais li {
+  padding: 0.35rem 0;
+  color: var(--texto);
+  font-size: 0.95rem;
+}
+
+/* ── Cardápio ── */
+.secao-cardapio {
+  padding: 5rem 0;
+  background-color: var(--creme);
+}
+
+.card-produto {
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem 1.5rem;
+  height: 100%;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card-produto:hover {
+  box-shadow: 0 4px 20px rgba(123, 74, 45, 0.1);
+  transform: translateY(-2px);
+}
+
+.card-produto-icone {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-produto p {
+  color: var(--texto-medio);
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-preco {
+  color: var(--marrom) !important;
+  font-size: 0.9rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.card-preco strong {
+  color: var(--rosa);
+}
+
+.btn-ver-sabores {
+  background: transparent;
+  border: 1.5px solid var(--rosa-borda);
+  color: var(--rosa);
+  padding: 0.4rem 1rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  width: 100%;
+}
+
+.btn-ver-sabores:hover,
+.btn-ver-sabores:focus {
+  background-color: var(--rosa-claro);
+  outline: 2px solid var(--rosa);
+  outline-offset: 2px;
+}
+
+.lista-sabores {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--rosa-claro);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--rosa);
+}
+
+.lista-sabores ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-sabores ul li {
+  font-size: 0.9rem;
+  color: var(--marrom);
+  padding: 0.2rem 0;
+}
+
+.lista-sabores ul li::before {
+  content: "• ";
+  color: var(--rosa);
+}
+
+/* ── FAQ ── */
+.secao-faq {
+  padding: 5rem 0;
+  background-color: var(--branco);
+}
+
+.faq-lista {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--borda);
+}
+
+.faq-pergunta {
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  border: none;
+  padding: 1.25rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--marrom);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  transition: color 0.2s;
+}
+
+.faq-pergunta::after {
+  content: "+";
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--rosa);
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.faq-pergunta[aria-expanded="true"]::after {
+  transform: rotate(45deg);
+}
+
+.faq-pergunta:hover,
+.faq-pergunta:focus {
+  color: var(--rosa);
+  outline: none;
+}
+
+.faq-pergunta:focus-visible {
+  outline: 2px solid var(--rosa);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.faq-resposta {
+  padding-bottom: 1.25rem;
+  color: var(--texto-medio);
+  font-size: 0.95rem;
+}
+
+/* ── Contato ── */
+.secao-contato {
+  padding: 5rem 0;
+  background-color: var(--creme);
+}
+
+.formulario-contato {
+  background-color: var(--branco);
+  border: 1px solid var(--borda);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2rem 2.5rem;
+}
+
+.campo-grupo {
+  margin-bottom: 1.25rem;
+}
+
+.campo-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--texto-medio);
+  margin-bottom: 0.4rem;
+}
+
+.campo-label span {
+  color: var(--rosa);
+}
+
+.campo-input {
+  width: 100%;
+  padding: 0.65rem 0.9rem;
+  font-size: 1rem;
+  color: var(--texto);
+  background-color: var(--branco);
+  border: 1.5px solid var(--borda);
+  border-radius: var(--radius-sm);
+  transition: border-color 0.2s, outline 0.2s;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.campo-input:focus {
+  border-color: var(--rosa);
+  outline: 2px solid rgba(212, 83, 126, 0.2);
+}
+
+.campo-input.erro {
+  border-color: #C0392B;
+}
+
+.campo-erro {
+  font-size: 0.82rem;
+  color: #C0392B;
+  margin-top: 0.3rem;
+  display: block;
+  min-height: 1em;
+}
+
+.mensagem-sucesso {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+  background-color: #EAF3DE;
+  color: #3B6D11;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid #639922;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.contatos-diretos {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.contatos-diretos p {
+  color: var(--texto-leve);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.link-contato {
+  display: block;
+  color: var(--marrom);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.35rem 0;
+  transition: color 0.2s;
+}
+
+.link-contato:hover,
+.link-contato:focus {
+  color: var(--rosa);
+  text-decoration: underline;
+}
+
+/* ── Footer ── */
+.rodape {
+  background-color: var(--marrom);
+  color: var(--creme);
+  padding: 2rem 0;
+}
+
+.rodape-marca {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--branco);
+  margin-bottom: 0.25rem;
+}
+
+.rodape-texto {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.65);
+  margin: 0;
+}
+
+/* ── Responsividade ── */
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 0 3.5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .btn-secundario {
+    margin-left: 0;
+    margin-top: 0.75rem;
+  }
+
+  .secao-sobre,
+  .secao-cardapio,
+  .secao-faq,
+  .secao-contato {
+    padding: 3.5rem 0;
+  }
+
+  .sobre-placeholder {
+    max-width: 260px;
+    font-size: 4rem;
+  }
+
+  .formulario-contato {
+    padding: 1.5rem 1.25rem 2rem;
+  }
+
+  .rodape .col-md-6:last-child {
+    margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .btn-primario,
+  .btn-secundario {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .btn-secundario {
+    margin-top: 0.75rem;
+  }
+}
+
+/* ── Acessibilidade: foco visível ── */
+:focus-visible {
+  outline: 2px solid var(--rosa);
+  outline-offset: 2px;
+}
+
+/* ── Preferência por menos movimento ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
